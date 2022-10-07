@@ -15,3 +15,9 @@ html
     background: url("../media/images/background.png") ;
     background-size: cover;
 }
+
+#initial-sign-up-logo
+{
+ width: auto;
+ height: auto; /* how do you size an image down*/
+}
