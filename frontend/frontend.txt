@@ -2,7 +2,7 @@ Front End Development
 Colors: 
 #486A4F (banner color) 
 #86ACAB (page color)
-#1590EB Linear Gradient (button color)
+#1590EB opacity (button color)
 Gray
 Black 
 
