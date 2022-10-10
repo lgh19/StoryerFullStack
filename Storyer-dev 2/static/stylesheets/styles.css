@@ -20,8 +20,8 @@ html
 {
  display: flex;
  align-items: center;
- justify-content: center;
- width: 650px;
+ justify-content: space-between;
+ width: 250px;
  padding: 20px;
  line-height: 1.4;
  color: black;
@@ -31,20 +31,20 @@ html
 .initial-sign-up-container *
 {
     font-family: sans-serif;
+    font-size: 24px;
 }
 
 .initial-sign-up-left
 .initial-sign-up-right
 {
-padding: 40px;
+padding: 50px;
 box-sizing: border-box;
 } 
 
-.initial-sign-up-logo
+.initial-sign-up-left .initial-sign-up-logo
 {
-    width: 100px;
-    height: 100px;;
+  
+    padding: 100px;
+    /*justify-content: space-between; */
 }
-
-
 
