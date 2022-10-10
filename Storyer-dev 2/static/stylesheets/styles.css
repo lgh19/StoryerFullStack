@@ -25,19 +25,26 @@ html
  padding: 20px;
  line-height: 1.4;
  color: black;
- /*border-top: 20px solid #486A4F;*/
+ border-top: 10px solid #486A4F;
  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-
+}
+.initial-sign-up-container *
+{
+    font-family: sans-serif;
 }
 
-.initial-sign-up-container h1
+.initial-sign-up-left
+.initial-sign-up-right
 {
-    font-size: 100px;
-    color: black;
+padding: 40px;
+box-sizing: border-box;
+} 
+
+.initial-sign-up-logo
+{
+    width: 100px;
+    height: 100px;;
 }
 
-/*#initial-sign-up-logo
-{
- width: auto;
- height: auto; how do you size an image down
-} */
+
+
