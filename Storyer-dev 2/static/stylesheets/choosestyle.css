@@ -11,14 +11,22 @@ body
     background-size: cover;
 }
 
+.logo-container img
+{
+    padding-top: 35px;
+    width: 800px;
+    height: 400px;
+}
+
 .initial-sign-up-button
 {
     align-items: center;
-    padding-left: 30px;
-    margin-top: 10px;
-    padding: 1px 3px;
+    margin-left: 300px;
+    margin-top: 40px;
+    padding: 10px 10px 10px;
     font-size: 20px;
     font-weight: bold;
-    width: 6em; 
-    border-radius: 6px;
+    width: 150px; 
+    border-radius: 8px;
+    background:rgba(149, 138, 138, 0.8);
 }
