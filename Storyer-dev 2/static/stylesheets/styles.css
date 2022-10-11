@@ -21,13 +21,69 @@ html
 {
     width: 1320px;
     height: 730px;
-    background-color: black;
-    opacity: 50%;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .sign-up-title
 {
-    font-size: 70px;
-    color: #fff;
+    font-size: 50px;
+    color: white;
     text-align: center;
+    font-weight: bold;
+    font-family: Sinhala MN;
 }
+
+.initial-sign-up-form
+{
+    padding: 8px;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.initial-sign-up-label
+{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.initial-sign-up-button
+{
+    background-color: gray;
+    color:black;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 14px;
+}
+
+.sign-up-input
+{
+    padding: 3px;
+    color: gray;
+    box-sizing: border-box;
+    font-size: 12px;
+    outline: none;
+    border: 2px solid #fff;
+}
+
+.sign-up-input:focus
+{
+    border-color: #486A4F;
+}
+
+.initial-sign-up-button
+{
+    align-items: center;
+    margin-top: 10px;
+    padding: 1px 3px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 6em; 
+    height: 2em;
+}
+
+
