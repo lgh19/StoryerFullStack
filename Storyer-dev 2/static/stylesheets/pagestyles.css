@@ -1,0 +1,36 @@
+html
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /*padding: 20px;*/
+    box-sizing: border-box;
+    background-color: #86ACAB;
+    background-size: cover;
+}
+
+.pages-banner
+{
+
+    width: 100%;
+    height: 185px;
+    background-color: #486A4F;
+    border-radius: 4px;
+}
+
+.nav-container img
+{
+    width: 300px;
+    height: 100px;
+    padding-right: 450px;
+    padding-top: 8px;
+}
+
+
+
