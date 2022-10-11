@@ -8,7 +8,7 @@ Black
 
 Page names 
 Facility 
-Index.html: Sign on 
+Index.html: Sign on
 Initial.html : initial sign up 
 Ru.html: initial sign on 
 groups.html: Facility create groups
@@ -20,7 +20,7 @@ SInfo: student information facility
 
 
 Student 
-Index.html: Sign on 
+Index.html: Sign on
 Initial.html : initial sign up 
 Ru.html: initial sign on 
 Pick.html : pick groups 
