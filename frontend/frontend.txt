@@ -10,7 +10,7 @@ Page names
 Facility 
 index.html: question with logo prior to initial !DONE
 Initial.html: initial sign on  !DONE
-create.html: Facility create groups
+create.html: Facility create groups IN PROGRESS 
 signon.html sign on !DONE
 FLand.html: facility lander 
 assign.html: facility create assignment page 
@@ -22,7 +22,7 @@ SInfo: student information facility
 Student 
 index.html: facility or student !DONE
 Initial.html: initial sign on  !DONE
-Pick.html : pick groups
+Pick.html : pick groups IN PROGRESS 
 signon : sing on !DONE  
 SLand.html: lander 
 Hw.html: assignment page 
