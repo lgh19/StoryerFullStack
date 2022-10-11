@@ -10,28 +10,37 @@
   <meta name = "viewport" content="width=device-width,intital-scale=1.0">
  
   <!--{% load static %}-->
-  <link rel='stylesheet' href='../../static/stylesheets/indexstyle.css'/>
+  <link rel='stylesheet' href='../../static/stylesheets/styles.css'/>
 </head>
 
+<div class="sign-on-container">
+  <div class="sign-on-title">
+    <h1>SIGN ON </h1>
+  </div>
 <body>
+  <div class="sign-on-form">
     <form action="./" method="post">
 
-        <div  class="sign-on-form">
-          <div> 
-            <label for="inpEmail" class="sign-on-label"> Email </label>
-            <input type="email" class="sign-on-input">
-          </div>
-        
-          <div> 
-            <label for="inpPass" class="sign-on-label"> Password </label>
-            <input type="password" class="sign-on-input">
-          </div>
-        
-          <div>
-            <button type="submit" class="sign-on-button"> LOGIN </button>
-          </div>
+      <div  class="sign-on-form">
+        <div> 
+          <label for="inpEmail" class="sign-on-label"> Email </label>
+          <input type="email" class="sign-on-input">
         </div>
-      </form>
-        
+
+        <div> 
+          <label for="inpPass" class="sign-on-label"> Password </label>
+          <input type="password" class="sign-on-input">
+        </div>
+      
+        <div>
+          <button type="submit" class="sign-on-button"> LOGIN </button>
+        </div>
+      </div>
+    </form>
+      
+  </div>
+</div>
+  </body>
+    
 
 </body>
