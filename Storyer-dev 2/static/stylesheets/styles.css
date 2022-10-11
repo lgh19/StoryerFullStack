@@ -87,3 +87,9 @@ html
 }
 
 
+.logo-container
+{
+    justify-content: left;
+    width: 400px;
+    height: 400px;
+}

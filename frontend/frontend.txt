@@ -8,6 +8,7 @@ Black
 
 Page names 
 Facility 
+choose.html: question with logo prior to initial
 Index.html: Sign on
 Initial.html : initial sign up 
 Ru.html: initial sign on 
