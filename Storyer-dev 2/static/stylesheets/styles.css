@@ -86,3 +86,23 @@ html
     height: 2em;
     border-radius: 6px;
 }
+
+.logo-container img
+{
+    padding-top: 35px;
+    width: 800px;
+    height: 400px;
+}
+
+.button
+{
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 40px;
+    padding: 10px 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px; 
+    border-radius: 8px;
+    background:rgba(149, 138, 138, 0.8);
+}

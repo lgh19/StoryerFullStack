@@ -8,23 +8,22 @@ Black
 
 Page names 
 Facility 
-choose.html: question with logo prior to initial
-Index.html: Sign on
-Initial.html : initial sign up 
-Ru.html: initial sign on 
-groups.html: Facility create groups
+index.html: question with logo prior to initial !DONE
+Initial.html: initial sign on  !DONE
+create.html: Facility create groups
+signon.html sign on !DONE
 FLand.html: facility lander 
-create.html: facility create assignment page 
+assign.html: facility create assignment page 
 Fsubmit.html: facility assignments submitted page 
 Fgroups: facility groups page
 SInfo: student information facility 
 
 
 Student 
-Index.html: Sign on
-Initial.html : initial sign up 
-Ru.html: initial sign on 
-Pick.html : pick groups 
+index.html: facility or student !DONE
+Initial.html: initial sign on  !DONE
+Pick.html : pick groups
+signon : sing on !DONE  
 SLand.html: lander 
 Hw.html: assignment page 
 Ssubmit.html: submission page 
