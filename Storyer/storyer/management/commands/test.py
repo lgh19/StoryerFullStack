@@ -1,6 +1,11 @@
 '''
+Docs:
+
 custom management commands docs:
 https://docs.djangoproject.com/en/4.1/howto/custom-management-commands/
+
+CRUD operations & working with database models/objects :
+https://docs.djangoproject.com/en/4.1/intro/tutorial02/#playing-with-the-api 
 '''
 
 from django.core.management.base import BaseCommand, CommandError
