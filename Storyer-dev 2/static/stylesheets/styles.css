@@ -84,12 +84,5 @@ html
     font-weight: bold;
     width: 6em; 
     height: 2em;
-}
-
-
-.logo-container
-{
-    justify-content: left;
-    width: 400px;
-    height: 400px;
+    border-radius: 6px;
 }
