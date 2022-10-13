@@ -5,6 +5,7 @@ Colors:
 #1590EB opacity (button color)
 Gray
 Black 
+fonts: Sinhala MN
 
 Page names 
 Facility 
