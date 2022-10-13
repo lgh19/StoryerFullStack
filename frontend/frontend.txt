@@ -9,10 +9,16 @@ fonts: Sinhala MN
 
 Page names 
 Facility 
+DONE 
+
 index.html: question with logo prior to initial !DONE
 Initial.html: initial sign on  !DONE
-create.html: Facility create groups IN PROGRESS 
+create.html: Facility create groups !DONE
 signon.html sign on !DONE
+
+STILL NEED TO DO 
+
+enlargecreate.html: Single screen per group creation
 FLand.html: facility lander 
 assign.html: facility create assignment page 
 Fsubmit.html: facility assignments submitted page 
@@ -21,11 +27,16 @@ SInfo: student information facility
 
 
 Student 
+DONE 
 index.html: facility or student !DONE
 Initial.html: initial sign on  !DONE
-Pick.html : pick groups IN PROGRESS 
-signon : sing on !DONE  
-SLand.html: lander 
+Pick.html : pick groups !DONE
+signon : sing on !DONE 
+
+STILL NEED TO DO 
+
+enlargedescrip.html: single screen per group description 
+SLand.html: lander !IN PROGRESS
 Hw.html: assignment page 
 Ssubmit.html: submission page 
 

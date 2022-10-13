@@ -127,3 +127,43 @@ body
     border-radius: 8px;
     background:rgba(149, 138, 138, 0.8);
 }
+
+/* end of create styles*/ 
+
+/* start of lander*/ 
+
+.member-name-land
+{
+
+}
+
+.nav-container img
+{
+    width: 305px;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.member-name-land
+{
+    flex-direction: col;
+}
+
+.member-name-land img
+{
+    width: 100px;
+    height: 100px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.name
+{
+    padding-left: 200px;
+    font-weight: bold;
+    font-family: Sinhala MN;
+    font-size: 14px;
+}
+
+/* end of student lander style */
