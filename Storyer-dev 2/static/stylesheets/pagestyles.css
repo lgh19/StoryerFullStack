@@ -132,10 +132,6 @@ body
 
 /* start of lander*/ 
 
-.member-name-land
-{
-
-}
 
 .nav-container img
 {
@@ -147,7 +143,9 @@ body
 
 .member-name-land
 {
-    flex-direction: col;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
 }
 
 .member-name-land img
@@ -164,6 +162,7 @@ body
     font-weight: bold;
     font-family: Sinhala MN;
     font-size: 14px;
+    display: inline;
 }
 
 /* end of student lander style */

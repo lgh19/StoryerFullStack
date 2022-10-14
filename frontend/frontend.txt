@@ -16,6 +16,14 @@ Initial.html: initial sign on  !DONE
 create.html: Facility create groups !DONE
 signon.html sign on !DONE
 
+Student 
+DONE 
+index.html: facility or student !DONE
+Initial.html: initial sign on  !DONE
+Pick.html : pick groups !DONE
+signon : sing on !DONE 
+
+Facility
 STILL NEED TO DO 
 
 enlargecreate.html: Single screen per group creation
@@ -27,12 +35,6 @@ SInfo: student information facility
 
 
 Student 
-DONE 
-index.html: facility or student !DONE
-Initial.html: initial sign on  !DONE
-Pick.html : pick groups !DONE
-signon : sing on !DONE 
-
 STILL NEED TO DO 
 
 enlargedescrip.html: single screen per group description 
