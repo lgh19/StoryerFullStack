@@ -159,4 +159,14 @@ body {
     background: rgba(149, 138, 138, 0.8);
 }
 
+.account-error-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(251, 169, 173);
+    font-family: Sinhala MN;
+    font-size: 25;
+
+}
+
 /*end of sign on*/

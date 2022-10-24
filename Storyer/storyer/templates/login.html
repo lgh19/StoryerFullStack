@@ -18,6 +18,11 @@
   <div class="sign-on-title">
     <h1>LOGIN </h1>
   </div>
+  <div class="account-error-message">
+    {% if error_message %}
+    <p>Login Error</p>
+    {% endif %}
+  </div>
 
   <body>
     <div class="sign-on-form">
@@ -25,12 +30,12 @@
         <div class="sign-on-form">
           <div>
             <label for="inpEmail" class="sign-on-label" id="email" name="email"> Email </label>
-            <input type="email" class="sign-on-input" name="email">
+            <input type="email" class="sign-on-input" name="email" required>
           </div>
 
           <div>
             <label for="inpPass" class="sign-on-label" id="password" name="password"> Password </label>
-            <input type="password" class="sign-on-input" name="password">
+            <input type="password" class="sign-on-input" name="password" required>
           </div>
 
           <div>
@@ -39,9 +44,8 @@
         </div>
       </form>
     </div>
-    <div>
-      <a href="{% url 'storyer:signup' %}" style="color:white">Create New Account</a>
-
+    <div style="display:flex; align-items:center; text-align:center">
+      <p><a href="{% url 'storyer:signup' %}" style="color:white">Create New Account</a></p>
     </div>
 </div>
 </body>
