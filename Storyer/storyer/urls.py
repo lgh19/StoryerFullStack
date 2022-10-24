@@ -5,4 +5,6 @@ from . import views
 app_name = 'storyer'
 urlpatterns = [
     path('', views.index, name='index'),
+    path('login', views.login, name='login'),
+    path('groups/<int:student_id>/', views.pick_groups, name='pick_groups'),
 ]

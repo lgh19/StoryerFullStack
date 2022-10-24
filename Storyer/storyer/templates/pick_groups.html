@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% if assignment_list %}
+<ul>
+    {% for assignment in assignment_list %}
+    <li>{{ assignment.title }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No Assignments are available.</p>
+{% endif %}
