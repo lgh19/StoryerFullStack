@@ -19,15 +19,15 @@
     <div class="sign-up-title">
       <h1>SIGN UP</h1>
     </div>
-    <form action="" method="POST">
+    <form action="" method="POST">{% csrf_token %}
       <div class="initial-sign-up-form">
         <div>
           <label for="inpName" class="initial-sign-up-label"> First Name </label>
-          <input type="text" class="sign-up-input" name="fname">
+          <input type="text" class="sign-up-input" name="first_name">
         </div>
         <div>
           <label for="inpName" class="initial-sign-up-label"> Last Name </label>
-          <input type="text" class="sign-up-input" name="lname">
+          <input type="text" class="sign-up-input" name="last_name">
         </div>
 
         <div>
