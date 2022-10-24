@@ -1,11 +1,11 @@
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, redirect, render
 
 # Create your views here.
 from django.http import HttpResponse
 
 from storyer.models import Student, Assignment
 from django.contrib.auth.models import User
-
+from .forms import LoginForm
 '''
 return HttpResponse("Hello world. This is the Storyer project index")
 '''
@@ -19,8 +19,23 @@ def signup(request):
     return render(request, 'initial.html')
 
 
+# this is specifically student login, will need to handle case of faculty login as well
 def login(request):
-
+    if request.method == "POST":
+        post_data = request.POST or None
+        if post_data is not None:
+            login_form = LoginForm(post_data)
+            if login_form.is_valid():
+                login_form = login_form.cleaned_data
+                student = Student.objects.filter(
+                    email=login_form['email'], password=login_form['password']).first()
+                if student is not None:
+                    return redirect('student_detail', student_id=student.id)
+                else:
+                    # reloads login page with error message, login page also needs option to redirect to signup
+                    return render(request, 'login.html')
+            else:
+                print(login_form.errors.as_data())
     return render(request, 'login.html')
 
 

@@ -16,22 +16,21 @@
 
 <div class="sign-on-container">
   <div class="sign-on-title">
-    <h1>SIGN ON </h1>
+    <h1>LOGIN </h1>
   </div>
 
   <body>
     <div class="sign-on-form">
-      <form action="./" method="post">
-
+      <form method="POST" name="login-form" action="">{% csrf_token %}
         <div class="sign-on-form">
           <div>
-            <label for="inpEmail" class="sign-on-label"> Email </label>
-            <input type="email" class="sign-on-input">
+            <label for="inpEmail" class="sign-on-label" id="email" name="email"> Email </label>
+            <input type="email" class="sign-on-input" name="email">
           </div>
 
           <div>
-            <label for="inpPass" class="sign-on-label"> Password </label>
-            <input type="password" class="sign-on-input">
+            <label for="inpPass" class="sign-on-label" id="password" name="password"> Password </label>
+            <input type="password" class="sign-on-input" name="password">
           </div>
 
           <div>
@@ -39,6 +38,11 @@
           </div>
         </div>
       </form>
+    </div>
+    <div>
+
+
+      <a href="{% url 'storyer:signup' %}" style="color:white">Create New Account</a>
 
     </div>
 </div>
