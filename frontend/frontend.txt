@@ -42,4 +42,8 @@ HW.html: assignment page
 
 Ssubmit.html: submission page 
 
+Groups.html: where other groups can look at the other groups videos 
+
+Videos: depending on what group you selected that is whose video you see here 
+
 Postsubmit.html: page that tells you you have successfully submitted 
