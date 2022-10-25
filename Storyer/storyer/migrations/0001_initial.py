@@ -12,6 +12,14 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
+            name='Group',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('name', models.CharField(max_length=100)),
+                ('description', models.TextField(blank=True)),
+            ],
+        ),
+        migrations.CreateModel(
             name='Student',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
