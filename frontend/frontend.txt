@@ -1,46 +1,45 @@
+Pages Both 
+
+Initial.html
+index.html
+signon.html
 
 
-index.html: question with logo prior to initial 
 
-Initial.html: initial sign on  
+Pages Facility 
 
-create.html: Facility create groups
+Create.html: create groups 
 
-signon.html sign on 
+Establish.html: posting groups 
 
-descriptgroups.html : description page for groups enlarged
+Postestablish.html: page saying you made the groups 
 
-Editgroup.html : edit the description of said group
+Fland.html: facility lander 
 
-index.html: facility or student 
+Studentinfo.html: student groups selecting rankings 
 
-Initial.html: initial sign on  
+Assign.html: creates an assignment 
 
-Pick.html : pick groups 
+postcreate.html: page saying you posted an assignment 
 
-signon : sing on 
+check.html: lets you select which group you want to go to 
 
-FLand.html: facility lander 
+Fsubmit.html: page that has the groups submissions 
 
-SLand.html: student lander 
 
-Moduleoverview: all assignments facility has 
 
-Studnetinfo: students groups that they picked 
+Pages Student 
 
-enlargecreate.html: Single screen per group creation
+pick.html: pick your group
 
-assign.html: facility create assignment page 
+Descriptgroups.html: groups description enlarged 
 
-Fsubmit.html: facility assignments submitted page 
+Postregister.html: page saying you have registered 
 
-Fgroups: facility groups page
+Sland.html: student lander 
 
-SInfo: student information facility 
-
-enlargedescrip.html: single screen per group description 
-
-Hw.html: assignment page 
+HW.html: assignment page 
 
 Ssubmit.html: submission page 
 
+Postsubmit.html: page that tells you you have successfully submitted 
