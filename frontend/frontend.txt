@@ -1,45 +1,46 @@
-Front End Development 
-Colors: 
-#486A4F (banner color) 
-#86ACAB (page color)
-#1590EB opacity (button color)
-Gray
-Black 
-fonts: Sinhala MN
 
-Page names 
-Facility 
-DONE 
 
-index.html: question with logo prior to initial !DONE
-Initial.html: initial sign on  !DONE
-create.html: Facility create groups !DONE
-signon.html sign on !DONE
+index.html: question with logo prior to initial 
 
-Student 
-DONE 
-index.html: facility or student !DONE
-Initial.html: initial sign on  !DONE
-Pick.html : pick groups !DONE
-signon : sing on !DONE 
+Initial.html: initial sign on  
 
-IN PROGRESS
+create.html: Facility create groups
+
+signon.html sign on 
+
+descriptgroups.html : description page for groups enlarged
+
+Editgroup.html : edit the description of said group
+
+index.html: facility or student 
+
+Initial.html: initial sign on  
+
+Pick.html : pick groups 
+
+signon : sing on 
+
 FLand.html: facility lander 
+
 SLand.html: student lander 
 
-Facility
-STILL NEED TO DO 
+Moduleoverview: all assignments facility has 
+
+Studnetinfo: students groups that they picked 
 
 enlargecreate.html: Single screen per group creation
+
 assign.html: facility create assignment page 
+
 Fsubmit.html: facility assignments submitted page 
+
 Fgroups: facility groups page
+
 SInfo: student information facility 
 
-
-Student 
-STILL NEED TO DO 
 enlargedescrip.html: single screen per group description 
+
 Hw.html: assignment page 
+
 Ssubmit.html: submission page 
 
