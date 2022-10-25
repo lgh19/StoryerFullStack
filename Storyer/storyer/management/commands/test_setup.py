@@ -41,42 +41,21 @@ class Command(BaseCommand):
             help='Enable console prints'
         )
 
-        parser.add_argument(
-            '--delete_all_tables',
-            action='store_true',
-            help='Clear Student and Group tables before adding test entries'
-        )
-
-        parser.add_argument(
-            '--delete_group_table',
-            action='store_true',
-            help='Clear Group table before adding test entries'
-        )
-
-        parser.add_argument(
-            '--delete_student_table',
-            action='store_true',
-            help='Clear Student table before adding test entries'
-        )
-
     # sets up DB for Student and Group tables
     # TODO: acommodate for just adding to preexisting tables, new groups or students
     def handle(self, *args, **options):
-        if options['delete_all_tables']:
-            Student.objects.all().delete()
-            Group.objects.all().delete()
-        
-        if options['delete_group_table']:
-            Group.objects.all().delete()
-
-        if options['delete_student_table']:
-            Student.objects.all().delete()
+        # delete tables by default
+        Student.objects.all().delete()
+        Group.objects.all().delete()
         
         if options['debug']:
             print("DB status on startup:")
             print("Groups: ", Group.objects.all())
             print("Students: ", Student.objects.all())
             print()
+        
+        Student.objects.all().delete()
+        Group.objects.all().delete()
 
         # get the arg vals and set to ints
         num_groups = int(options['num_groups'][0])
@@ -95,6 +74,7 @@ class Command(BaseCommand):
             email = "test" + str(i+1)
             password = "test" + str(i+1)
             student = Student(name=name, email=email, password=password)
+            student.save()
 
             # create random preferences
             preferences = list(Group.objects.values_list('id', flat=True))
@@ -105,7 +85,7 @@ class Command(BaseCommand):
                 curr_preference = Group.objects.get(pk=id)
                 student.preferences.add(curr_preference, through_defaults={'priority':priority})
                 priority+=1
-            
+
             student.save()
 
         if options['debug']:

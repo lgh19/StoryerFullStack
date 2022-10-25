@@ -117,6 +117,7 @@ class Command(BaseCommand):
                     # endif
                 # end group loop
                 priority += 1
+            priority = 1
         # end student assignment
 
         if options['debug']:

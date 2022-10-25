@@ -36,7 +36,6 @@ class Group(models.Model):
 class Assignment(models.Model):
     title = models.CharField(max_length=250, blank=False, null=False)
     description = models.TextField(blank=False, null=False)
-    group = models.ForeignKey("Group", on_delete = models.CASCADE, null=True)
 
     def __str__(self):
         return self.title
