@@ -8,12 +8,12 @@ groups = []
 studentsInGroup = []
 
 # placeholders, negative for debugging until set
-numStudents = -1
-numGroups = -1
+global numStudents
+global numGroups
 
 # range of how many students should be in each group, default
-minGroupSize = 3
-maxGroupSize = 5
+global minGroupSize
+global maxGroupSize
 
 """
 Java class
@@ -63,6 +63,31 @@ class Group:
         self.size = 0
         self.students = []
         self.name = name
+
+# calculates the min and max group size based on student to group ratio
+def calculateGroupSizeRange():
+    global numStudents
+    global numGroups
+    global minGroupSize
+    global maxGroupSize
+
+    # get the ratio of students to groups
+    midSize = numStudents / numGroups
+
+    # get 2 ints, 1 above and below ratio for max and min group size
+    # if not an int
+    if (numStudents % numGroups) != 0:
+        #print("uneven distribution")
+        minGroupSize = math.floor(midSize) - 1
+        maxGroupSize = math.ceil(midSize)
+    #endif
+    # if the ratio of groups to students is even
+    else:
+        #print("even distribution")
+        minGroupSize = midSize - 1
+        maxGroupSize = midSize + 1
+
+    
 
 # function to find a specific student in a list of students
 # false if student not in list, true if student in list
@@ -121,23 +146,9 @@ if len(sys.argv) > 1:
 
     # end getting and formatting file data
 
-    # get the ratio of students to groups
-    midSize = numStudents / numGroups
-
-    # get 2 ints, 1 above and below ratio for max and min group size
-    # if not an int
-    if (numStudents % numGroups) != 0:
-        print("uneven distribution")
-        minGroupSize = math.floor(midSize) - 1
-        maxGroupSize = math.ceil(midSize)
-
-    #endif
-    else:
-        print("even distribution")
-        minGroupSize = midSize - 1
-        maxGroupSize = midSize + 1
-
-    print("mid:", midSize, ", min:", minGroupSize, ", max:", maxGroupSize)
+    # calculates the min and max group size based on student to group ratio
+    calculateGroupSizeRange()
+    print("min:", minGroupSize, ", max:", maxGroupSize)
     print()
 
     # STEP 1: fill all groups until the minimum size is reached, starting with
@@ -145,7 +156,7 @@ if len(sys.argv) > 1:
     # has been used
     preferIndex = 0         # incr until at last preference
     while len(studentsInGroup) < (numGroups * minGroupSize):
-        print("filling groups")
+        print("filling groups 1")
         while preferIndex < numGroups:
             print("preference index ", preferIndex)
             for group in groups:
@@ -204,7 +215,7 @@ if len(sys.argv) > 1:
             preferIndex += 1
     # end student assignment
 
-    # all students should be in here now
+    # all students should be in groups now
     print(len(studentsInGroup), " in groups")
     for group in groups:
         print(group.name, ", size: ", group.size)
